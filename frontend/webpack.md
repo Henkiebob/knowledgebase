@@ -7,7 +7,8 @@ wordt gebracht als HTML, CSS en JavaScript die de browser kan gebruiken.
 Je hebt misschien al eens gehoord van Sass, CoffeeScript of LESS. Deze talen
 moeten eerst gecompileerd (omgezet) worden naar iets dat de webbrowser kan
 lezen, zoals CSS of JavaScript. Dit is wat Webpack voor je kunt doen. Het is te
-vergelijken met Ruby on Rails' Asset Pipeline.
+vergelijken met de
+[Ruby on Rails' Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html).
 
 ## Wat kan Webpack voor je doen?
 
@@ -29,5 +30,8 @@ nodig heeft.
 - Node (https://nodejs.org/en/)
 
 ## Beginnen!
-- http://blog.madewithlove.be/post/webpack-your-bags/
-- http://webpack.github.io/docs/tutorials/getting-started/
+
+```
+http://blog.madewithlove.be/post/webpack-your-bags/
+http://webpack.github.io/docs/tutorials/getting-started/
+```
