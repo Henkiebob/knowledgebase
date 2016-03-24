@@ -15,6 +15,8 @@ De belangrijkste reden om swift te gebruiken is op dit moment het maken van apps
 Functional reactive programming https://realm.io/news/altconf-ash-furrow-functional-reactive-swift/
 
 # Backend
+Er zijn al diverse frameworks voor backend swift. Hou er rekening mee dat het "early days" is. De kans dat frameworks dramatische veranderen of verdwijnen is heel groot!
+
 * Kitura framework van IBM: https://developer.ibm.com/swift/products/kitura/
 * https://github.com/crossroadlabs/Express
 * Perfect framework http://www.perfect.org
