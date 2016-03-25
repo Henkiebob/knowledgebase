@@ -13,6 +13,10 @@ https://www.codecademy.com/tracks/javascript
 https://www.smashingmagazine.com/2015/10/es6-whats-new-next-version-javascript/
 ```
 
+### Taal extensies
+Type script http://www.typescriptlang.org
+Coffee script: http://coffeescript.org
+
 ### Volg een style guide
 ```
 ES6: https://github.com/airbnb/javascript
