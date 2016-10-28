@@ -8,7 +8,7 @@ De belangrijkste reden om swift te gebruiken is op dit moment het maken van apps
 * Online Swift Sandbox https://swiftlang.ng.bluemix.net/?cm_mmc=developerWorks-_-dWdevcenter-_-swift-_-lp&cm_mc_uid=24776265414114587480481&cm_mc_sid_50200000=1458748048#/repl
 
 # Documentatie
-* Overview van allerlei best practices Swift: https://github.com/hsavit1/Awesome-Swift-Education?utm_campaign=iOS%2BDev%2BWeekly&utm_medium=web
+* Overview van allerlei best practices Swift: https://github.com/hsavit1/Awesome-Swift-Education
 
 
 # Programmeerstijl
