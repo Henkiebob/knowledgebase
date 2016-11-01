@@ -4,7 +4,7 @@ Laravel is een framework wat volledig als composer package geinstalleerd kan wor
 
 Voor het ontwikkelen met Laravel zou je enige terminal / command line commando's moeten uitvoeren.
 
-Voor de heilige graag van alle documentatie:
+Voor de heilige graal van alle documentatie:
 <https://laravel.com/docs/5.3/>
 
 ##Windows
