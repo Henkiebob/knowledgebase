@@ -13,12 +13,12 @@ Een aantal voordelen zijn:
 
 ## **Installeren**
 
-Voor het installeren van _Vagrant_ heb je _VirtualeBox_ nodig, dit is gratis en voor zowel Windows als Mac.
+Voor het installeren van _Vagrant_ heb je _VirtualBox_ nodig, dit is gratis en voor zowel Windows als Mac.
 Download beide installaties voor jou systeem:
 - https://www.virtualbox.org/wiki/Downloads
 - https://www.vagrantup.com/downloads.html
 
-**Installeer eerst VirtualeBox daarna pas Vagrant!**
+**Installeer eerst VirtualBox daarna pas Vagrant!**
 
 Als beiden zijn geïnstalleerd maak een map aan waar je jouw project wilt gaan hebben. Bijvoorbeeld "laravel" of "ruby" **Geen hoofdletters of Vagrant zal niet goed koppelen met deze map!**
 
@@ -47,7 +47,7 @@ cd ~/Documents/laravel
 
 Type nu in de terminal:
 ```
-vagrant up --provider virtualebox
+vagrant up --provider virtualbox
 ```
 Je Vagrant Installatie zal zich nu installeren.
 
