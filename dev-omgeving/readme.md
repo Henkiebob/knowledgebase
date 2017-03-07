@@ -86,4 +86,6 @@ Alle commando's worden uitgevoerd in je terminal in de map waar je de server heb
 stuur mij voornu een slack bericht: _maxvanderschee_
 
 
-**undefinde developer:** dit kan voorkomen bij mac, ga naar `settings .`
+**undefinde developer:**
+
+Dit kan voorkomen bij mac, ga naar `Mac settings >> Security & privacy` bij het kopje `Allow apps downloaded from` en selecteer `App store and developers`
