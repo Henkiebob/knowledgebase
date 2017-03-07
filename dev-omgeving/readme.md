@@ -20,16 +20,16 @@ Download beide installaties voor jou systeem:
 
 **Installeer eerst VirtualBox daarna pas Vagrant!**
 
-Als beiden zijn geïnstalleerd maak een map aan waar je jouw project wilt gaan hebben. Bijvoorbeeld "laravel" of "ruby" **Geen hoofdletters of Vagrant zal niet goed koppelen met deze map!**
+Als beiden zijn geïnstalleerd maak een map aan waar je jouw project wilt gaan hebben. Bijvoorbeeld voor Windows: `C:\Users\GEBRUIKER\Documents\laravel` en Mac:`~/Documents/laravel`  **Geen hoofdletters of Vagrant zal niet goed koppelen met deze map!**
 
 Na dat deze map is aangemaakt volg de instructie voor:
 - [Installatie PHP laravel](#installatie-php-laravel)
 
 
 ### **Installatie PHP Laravel**
-specs: `git php-7.0 nginx` maar nog zonder database!
+specs: `git php-7.0 nginx sqlite` maar nog zonder database!
 
-Voor het veder installeren van Laravel heb je de 2 bestanden nodig in de _laravel_ map `Vagrantfile` en `laravel.sh`
+Voor het veder installeren van Laravel heb je de 2 bestanden nodig in de _laravel_ map [Vagrantfile](laravel/Vagrantfile) en [laravel.sh](laravel/laravel.sh)
 
 Beiden moet je over kopiëren in je mapje die je hebt aan gemaakt. Voor deze instructie noemen we deze `laravel`
 
@@ -53,7 +53,7 @@ Je Vagrant Installatie zal zich nu installeren.
 
 Als hij klaar is met alles installeren moeten we nog 1 actie uitvoeren zodat je _vagrant_ opnieuw kan starten.
 
-1. Ga naar VM VirtualBox en dubbelclick op `laravel_default_...`.
+1. Ga naar VM VirtualBox en dubbelclick op `vagrant_default_...`.
 
 2. Log hierin met `ubuntu` en er zal een password reset worden uitgevoerd. Vul hier ook 2x `ubuntu` in.
 
@@ -79,3 +79,11 @@ Alle commando's worden uitgevoerd in je terminal in de map waar je de server heb
 **SSH-toegang tot de server**
 - Mac: `vagrant ssh` username: _ubuntu_ password: _ubuntu_.
 - Windows: [Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) ip: _127.0.0.1_ port: _2222_ username: _ubuntu_ password: _ubuntu_.
+
+
+# **Troubleshooting**
+
+stuur mij voornu een slack bericht: _maxvanderschee_
+
+
+**undefinde developer:** dit kan voorkomen bij mac, ga naar `settings .`
