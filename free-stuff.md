@@ -17,3 +17,7 @@ Marvel 50% discount.
 Met het gebruik van je NHL e-mailadres en waarschijnlijk een printscreenv van educator heb je recht op een studentenlicentie:
 
 <https://www.invisionapp.com/education>
+
+## Boeken
+Een aantal gratis boeken voor developers.
+<https://devfreebooks.github.io/>
