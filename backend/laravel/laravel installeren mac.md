@@ -12,5 +12,3 @@ Laravel installeren op Mac
 
 php artisan make:model User
 
-composer require "laravelcollective/html":"^5.2.0"
-
