@@ -1,14 +1,7 @@
 #Laravel installeren windows
 
-Ok, voordat we beginnen.. er zijn meerdere wegen naar Rome.. Uiteindelijk komt het op het volgende neer:
-
-Wat je nodig hebt:
-----
-`composer`
-`php 5.6 of hoger`
-`mysql`
-
-Dit zijn de minimale benodigdheden voor Laravel, je kan vervolgens de geintegreerde webserver gebruiken om je applicaties te draaien. Wil je het op een server installeren dan heb je nog `nginx` of `apache2` nodig.
+Ok, voordat we beginnen.. er zijn meerdere wegen naar Rome..
+De makkelijkste optie is via Laragon, de beste optie is via Vagrant.
 
 ##Out of the Virtualbox
 
@@ -16,10 +9,12 @@ Een oplossing is homestead, homestead is een virtual machine ontwikkeld voor Lar
 
 `https://laravel.com/docs/5.3/homestead`
 
-#Installatie
-Wij gaan echter de snelste manier bewandelen, in de volgende stappen.
+## Vagrant
+Max van der Schee heeft een script geschreven voor een Vagrant box die alle benodigdheden installeert.
+Volg de installatie hier:
+[knowledgebase](https://github.com/NHLHogeschool/knowledgebase/tree/master/dev-omgeving)
 
-Download XAMMP, XAMPP zorgt ervoor dat PHP, MYSQL en APACHE2 geinstalleerd worden op je machine.
+##Laragon
+[Laragon downloaden](https://laragon.org/download.html)
 
-Kies de gene met PHP 5.6 
-`https://www.apachefriends.org/download.html`
+Selecteer een full pakket, nginx of apache2 maakt niet veel uit, nginx heeft mijn persoonlijke voorkeur.
