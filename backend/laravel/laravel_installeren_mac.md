@@ -1,4 +1,6 @@
+
 #Laravel installeren op Mac
+
 Laravel is beschikbaar als package binnen composer, die vervolgens PHP nodig heeft om te kunnen draaien.
 Laravel heeft een ingebouwde server, dus je hebt in principe zelf geen apache, nginx nodig om te kunnen beginnen.
 
