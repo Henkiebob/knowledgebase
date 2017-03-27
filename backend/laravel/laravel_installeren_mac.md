@@ -16,6 +16,7 @@ Kopieer en plak het bovenstaande commando in je terminal en SMASH op ENTER alsof
 Voor de zekerheid moeten wij natuurlijk wel even weten of je brew nog up to date is.
 
 `brew update` <-- even uitvoeren
+
 `brew upgrade` <-- even doen
 
 Ok cool, soms het voor dat je een oude versie van Homebrew hebt met allemaal fouten, je kan deze het beste oplossen met `brew doctor`
@@ -34,9 +35,11 @@ Als je alle stappen gevolgd hebt, voer dan dit commando uit `php -v` krijg je ph
 ## Composer
 Tijd voor composer!
 `brew install composer`
+
 `composer global require "laravel/installer"`
 
 - Zet het volgende pad in je ZSHRC of BASHRC (gebruik je zshell of standaard bash?)
+
 `export PATH=~/.composer/vendor/bin:$PATH`
 
 ## The final test
