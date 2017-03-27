@@ -25,7 +25,8 @@ ga vervolgens alle problemen bij langs en los ze op. (Google is your friend)
 ## PHP
 Mac heeft standaard php geinstalleerd, maar een oude versie, installeer hiermee de nieuwste versie.
 
-`brew install php71`
+`brew tap homebrew/homebrew-php` <-- even doen
+`brew install php71` <-- shaboeb shabawm
 
 Als het goed is geeft dit commando een aantal vervolgstappen, voer deze allemaal uit!
 Lees je terminal goed na.
