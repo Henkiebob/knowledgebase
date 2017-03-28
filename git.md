@@ -41,6 +41,7 @@ Naast Git in de terminal zijn er ook allerlei dekstop applicaties die het gebrui
 
 Een vergelijking van verschillende [git worksflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
 
+### Git geavanceerd
 ```
 --
 Git Commit Styleguide
@@ -49,7 +50,7 @@ Git Commit Styleguide
 http://chris.beams.io/posts/git-commit/
 ```
 
-Geavanceerde Git tutorials
+Advanced tutorial
 
 ```
 https://www.atlassian.com/git/tutorials/advanced-overview
