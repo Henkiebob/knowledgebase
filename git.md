@@ -31,7 +31,7 @@ https://guides.github.com/activities/hello-world/
 Naast Git in de terminal zijn er ook allerlei dekstop applicaties die het gebruik van Git net iets gemakkelijker maken.
 
 [SourceTree](https://www.sourcetreeapp.com/),
-[GitHub Desktop](https://desktop.github.com/)
+[GitHub Desktop](https://desktop.github.com/),
 [Tower](https://www.git-tower.com)
 
 ## Meer over Git
