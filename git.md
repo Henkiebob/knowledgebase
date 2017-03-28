@@ -39,7 +39,7 @@ Naast Git in de terminal zijn er ook allerlei dekstop applicaties die het gebrui
 
 [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/)
 
-Een vergelijking van verschillende (git worksflows)[https://www.atlassian.com/git/tutorials/comparing-workflows]
+Een vergelijking van verschillende [git worksflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
 
 ```
 --
