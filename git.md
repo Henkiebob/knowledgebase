@@ -1,5 +1,5 @@
 # Git
-##Wat is Git?
+## Wat is Git?
 [Git](https://git-scm.com/) is een versiebeheer programma. 
 Dit betekent dat Git gebruikt kan worden om verschillende versies van je code bij te houden.
 Zo wordt Git vaak gebruikt om met je team samen te werken aan je project. 
@@ -8,7 +8,7 @@ Iedereen kan op zijn eigen computer werken aan nieuwe functies en **pusht** (dee
 Hiervoor wordt gebruik gemaakt van **repositories**, waar elke gedeelde versie van je code permanent wordt bewaard.
 Je kan repositories delen via diensten zoals [GitHub](https://github.com) en [BitBucket](https://bitbucket.org)
 
-##Beginnen
+## Beginnen
 ### Installeren
 
 ```
@@ -32,9 +32,10 @@ Naast Git in de terminal zijn er ook allerlei dekstop applicaties die het gebrui
 
 [SourceTree](https://www.sourcetreeapp.com/),
 [GitHub Desktop](https://desktop.github.com/)
+[Tower](https://www.git-tower.com)
 
 ## Meer over Git
-###Git Workflows
+### Git Workflows
 ```
 https://www.atlassian.com/git/tutorials/comparing-workflows
 ```
