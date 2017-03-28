@@ -36,8 +36,11 @@ Naast Git in de terminal zijn er ook allerlei dekstop applicaties die het gebrui
 
 ## Meer over Git
 ### Git Workflows
-```
-https://www.atlassian.com/git/tutorials/comparing-workflows
+
+[Git Flow](http://nvie.com/posts/a-successful-git-branching-model/)
+
+Een vergelijking van verschillende (git worksflows)[https://www.atlassian.com/git/tutorials/comparing-workflows]
+
 ```
 --
 Git Commit Styleguide
