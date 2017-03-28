@@ -4,7 +4,7 @@ chage -d0 ubuntu
 echo "installing nginx and setup config"
 sleep 2
 sudo apt-get update
-sudo apt-get install -y nginx git php7.0-fpm php7.0-cli php7.0-mcrypt
+sudo apt-get install -y nginx zip unzip git php7.0-fpm php7.0-cli php7.0-mcrypt php7.0-mbstring php7.0-xml php7.0-curl
 sudo mv /etc/php/7.0/fpm/pool.d/www.conf /etc/php/7.0/fpm/pool.d/www.conf.bak
 sudo touch /etc/php/7.0/fpm/pool.d/laravel.conf
 sudo cat> "/etc/php/7.0/fpm/pool.d/laravel.conf" <<'EOF'
