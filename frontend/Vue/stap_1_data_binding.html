@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue wat is databinding??</title>
+    </head>
+    <body>
+        <div id="root">
+            <input type="text" id="input" v-model="message">
+            <p>Het bericht is: {{ message }}
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+        <script>
+        new Vue({
+        el: '#root',
+            data : {
+                message : 'Hello World'
+            }
+        })
+        </script>
+    </body>
+</html>

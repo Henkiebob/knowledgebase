@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue lijstjes maken!</title>
+    </head>
+    <body>
+
+        <div id="root">
+            <ul>
+                <li v-for="name in names">{{ name }}</li>
+            </ul>
+
+            <input type="text" v-model="newName" @keyup.enter="addName">
+            <button @click="addName">Voeg een naam toe</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+        <script>
+        new Vue({
+            el: '#root',
+            data : {
+                newName: '',
+                names : ['Henk', 'Eric', 'Dirk', 'Tjerk', 'Renze']
+            },
+            methods: {
+                addName(){
+                    //alert('Hallo!');
+
+                    this.names.push(this.newName);
+                    this.newName = "";
+                }
+            }
+        })
+        </script>
+    </body>
+</html>

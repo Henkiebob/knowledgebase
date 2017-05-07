@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue takenlijst met computer properties</title>
+    </head>
+
+    <body>
+
+        <div id="root">
+            <div v-if="incompleteTasks.length > 0">
+                <h1>Todo</h1>
+                <ul>
+                    <!-- <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li> -->
+                    <li v-for="task in incompleteTasks">
+                        <input type="checkbox" v-model="task.completed"/>
+                        {{ task.description }}
+                    </li>
+                </ul>
+            </div>
+
+            <div v-else>
+                <h1>Er zijn geen taken meer voor je!</h1>
+            </div>
+
+            <h2>Done</h2>
+
+            <ul>
+                <!-- <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li> -->
+                <li v-for="task in completedTasks">
+                    {{ task.description }}
+                    <input type="checkbox" v-model="task.completed"/>
+                </li>
+            </ul>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+        <script>
+
+        new Vue({
+            el: '#root',
+            data : {
+                tasks : [
+                    { description: 'Laravel college maken', completed: true },
+                    { description: 'Afwassen', completed: true },
+                    { description: 'Jan Wessel schoppen', completed: false },
+                ]
+
+            },
+            methods: {
+                finishTask(task) {
+                    task.completed = true;
+                }
+            },
+
+            computed: {
+                completedTasks() {
+                    return this.tasks.filter(task => task.completed);
+                },
+
+                incompleteTasks() {
+                     return this.tasks.filter(task => ! task.completed);
+                }
+            }
+        })
+
+        </script>
+    </body>
+</html>
