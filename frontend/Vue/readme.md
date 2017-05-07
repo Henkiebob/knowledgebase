@@ -1,4 +1,4 @@
-# Les 1
+# Les 1 - Data binding
 Laten we beginnen met implementeren van Vue in een doodnormale HTML pagina, zo kan je zien wat voor coole dingen Vue.js allemaal te bieden heeft!
 
 We beginnen dus met een stukje HTML, maak een `index.html` bestand aan en knal dit erin.
@@ -10,7 +10,7 @@ We beginnen dus met een stukje HTML, maak een `index.html` bestand aan en knal d
         <title>Vue wat is databinding??</title>
     </head>
     <body>
-
+		<!-- hier komt nog wat !-->
     </body>
 </html>
 
@@ -60,7 +60,7 @@ Knal dit boven je bericht!
 
 Bam, dikke data-binding, alles wat in de input komt, staat ook direct in de HTML, cool toch?
 
-# Les 2
+# Les 2 Templating en Methods
 Voor deze les gaan we ook bezig met de Vue devtools, wanneer je in Vue.js gaat ontwikkelen zijn deze essentieel.
 
  [Vue.js devtools - Chrome Web Store](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
@@ -161,7 +161,110 @@ En bam, je hebt een nieuwe naam, je kan hetzelfde doen met een keydown.enter dus
 <input type="text" v-model="newName" @keyup.enter="addName">
 ```
 
-Je kan de code nog opschonen door het veld leeg te maken wanneer je een nieuwe hebt toegevoegd.
+Je kan de code nog opschonen door het veld leeg te maken wanneer je een nieuwe hebt toegevoegd, voeg dit toe aan je addName() methode.
 
 `this.newName = "";`
 
+## Les 3 Computed Properties
+
+We gaan een Todo lijstje maken, hiervoor gaan we gebruik maken van computer properties, dat betekent we gaan de data die er in onze applicatie wordt gebruikt aanpassen aan onze wensen, zie het zo, wanneer je data wil gaan laten zien zoals: "Welke taken staan er op todo? en welke zijn klaar?" Dan moet je de Taken gaan manipuleren of filteren zodat alleen de gedane taken worden getoond, deze logica zit ingebouwd in Vue.
+
+We starten met een stukje html en een taken lijstje, onze taken hebben nu een extra attribuut, namelijk completed hiermee kunnen we straks gaan filteren.
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue takenlijst met computed properties</title>
+    </head>
+
+    <body>
+
+        <div id="root">
+            <h1>Todo</h1>
+            <ul>
+                <li v-for="task in tasks">
+                    {{ task.description }}
+                </li>
+            </ul>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+        <script>
+
+        new Vue({
+            el: '#root',
+            data : {
+                tasks : [
+                    { description: 'Boodschappen doen', completed: true },
+                    { description: 'Afwassen', completed: true },
+                    { description: 'Koken', completed: false },
+                ]
+            }
+        })
+        </script>
+    </body>
+</html>
+```
+
+Laten we de computed property toevoegen, we kunnen deze zelf een naam geven, wil de huidige tasks filteren, zodat ik alleen de taken te zien krijg die al gedaan zijn. Ik gebruik hiervoor de standaard Javascript filter functie, maar wil in de nieuwe Javascript syntax, dit werkt dus niet in oude browsers maar dit kan je altijd herschrijven.
+
+Voor referentie: [Array filter documentatie](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+```javascript
+computed: {
+    completedTasks() {
+        return this.tasks.filter(task => task.completed);
+    },
+}
+```
+
+Dus laten we een onderscheid maken, pas de html aan naar het volgende:
+
+```html
+<h1>Done</h1>
+
+<li v-for="task in completedTasks">
+    {{ task.description }}
+</li>
+
+```
+
+Cool, laten we het zelfde doen voor taken die nog niet klaar zijn.
+Doodsimpel eigenlijk.
+
+```javascript
+incompleteTasks() {
+     return this.tasks.filter(task => ! task.completed);
+}
+```
+
+Daarna krijgen we dus:
+
+```html
+<h1>Todo</h1>
+
+<li v-for="task in incompletedTasks">
+    {{ task.description }}
+</li>
+
+
+<h1>Done</h1>
+
+<li v-for="task in completedTasks">
+    {{ task.description }}
+</li>
+
+```
+
+Top, maar hoe gaan we nu een taak afronden? Nou als het goed is weet je al hoe we een methode moeten maken.
+
+Laten we eerst maar even een checkbox toevoegen aan de html. Zit dit in de v-for nog een mooi voorbeeld, we kunnen de data aan elkaar koppelen, dus de checkbox is gekoppeld aan de data die wij binnen krijgen, de checkbox is automatisch aangevinkt wanneer de task `completed = true` heeft.
+
+```html
+    <input type="checkbox" v-model="task.completed"/>
+```
+
+En klaar, je takenlijst werkt! Probeer anders een een tekst te tonen wanneer er geen taken meer zijn, hint je hebt hiervoor een `v-if` statement en een `.length` functie nodig.
+
+Of combineer de vorige opdracht zodat je ook taken kan toevoegen!
