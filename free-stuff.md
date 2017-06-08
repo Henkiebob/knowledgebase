@@ -1,6 +1,6 @@
 # Free Stuff
 
-##Github eduation
+## Github eduation
 Github education biedt voor studenten een groot aantal gratis apps en tegoed voor services die je goed kan gebruiken, bijvoorbeeld:
 
 Digital Ocean
