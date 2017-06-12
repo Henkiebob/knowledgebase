@@ -1,0 +1,103 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+header {
+  nav.navbar {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+footer {
+   padding: 40px 0 60px;
+  text-align: center;
+  .btn {
+    font-size: 24px;
+  }
+}
+a#logo {
+  line-height: 50px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+.btn {
+   &:focus {
+     outline: 0 !important;
+  }
+}
+#search-engine {
+   background-image: url("http://worldunity.me/wp-content/uploads/2016/01/bier.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 420px;
+   width: 100%;
+   text-align: center;
+   transition: height .5s ease;
+   h1 {
+      margin-top: 30px;
+      font-weight: bold;
+      transition: margin-top .5s ease;
+   }
+   &.filled {
+      height: 240px;
+      h1 {
+         margin-top: 10px;
+      }
+   }
+}
+
+.product {
+   &-body {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+   }
+   &-name {
+      font-weight: bold;
+      font-size: 16px
+   }
+   &-price {
+      margin-bottom: 20px;
+   }
+
+}
+
+.fade-enter-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+
+//Mobile only
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+    background: #fff;
+    border-top: 1px solid #d3e0e9;
+    &.sticky {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+  #search-engine {
+    height: 240px;
+  }
+  #results {
+    min-height: 420px;
+  }
+}
